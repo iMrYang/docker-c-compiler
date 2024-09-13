@@ -8,6 +8,7 @@ RUN \
         gcc-c++ libstdc++-devel libstdc++-devel.i686 \
 	    cmake autoconf automake make patch \
 	    valgrind tcpdump strace gdb \
+	    diffutils perl \
     && yum -y clean all
 
 CMD [ "/bin/bash" ]
